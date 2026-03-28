@@ -32,7 +32,7 @@ jobs:
             libwayland-dev \
             libxkbcommon-dev
 
-      - name: Cache Cargo registry & build artefacts
+      - name: Cache Cargo registry & build artifacts
         uses: actions/cache@v4
         with:
           path: |
