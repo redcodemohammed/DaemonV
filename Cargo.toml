@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 bevy = { version = "0.18.1", features = ["dynamic_linking"] }
+bevy_rapier3d = "0.33.0"
 
 # Enable a small amount of optimisation in debug builds for our own code.
 [profile.dev]
