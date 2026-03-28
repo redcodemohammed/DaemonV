@@ -1,0 +1,16 @@
+[package]
+name = "daemonv"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.18.1", features = ["dynamic_linking"] }
+
+# Enable a small amount of optimisation in debug builds for our own code.
+[profile.dev]
+opt-level = 1
+
+# Enable maximum optimisation for dependencies in debug builds.
+# This keeps compile-fast iterative dev while still running deps at full speed.
+[profile.dev.package."*"]
+opt-level = 3
